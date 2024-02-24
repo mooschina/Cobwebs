@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="keywordas" content="蜘蛛网">
+		<meta name="author" content="方琪傑">
+		<title>蜘蛛网</title>
+	</head>
+	<body color="#d0e4fe">
+		<div>
+			
+			<big>
+				<b>蜘蛛网</b>
+				<center>
+				<a href="C:\Users\admin\Desktop\蜘蛛网\蜘蛛网.htm">首页
+				</a>
+
+				<a href="C:\Users\admin\Desktop\蜘蛛网\常用网站.htm">常用网站
+				</a>
+				</center>
+			</big>
+		</div>
+		<center>
+			<pre id = "time">现在时刻：</pre>
+			<script>
+				function Time()
+				{
+					x=document.getElementById("time");  // 找到元素
+					var d=new Date();
+					var y = d.getFullYear();
+					var m = d.getMonth() + 1;
+					var day = d.getDate();
+					x.innerHTML= "现在时刻："+y+"年"+m+"月"+day+"日";    // 改变内容
+				}
+			</script>
+			<button type="button" onclick="Time()">刷新时间</button>
+		</center>
+		
+	</body>
+</html>
